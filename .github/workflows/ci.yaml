@@ -31,7 +31,7 @@ jobs:
       - name: Run tests
         run: pytest tests/
 
-      # 5️⃣ Verify Docker secrets exist safely
+      # 5️⃣ Verify Docker secrets exist
       - name: Verify Docker secrets
         run: |
           if [ -z "${{ secrets.DOCKER_USERNAME }}" ]; then
